@@ -13,7 +13,7 @@ from data_read import read_data
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
-path = "/Users/yuao/Downloads/"
+path = ""
 file_name = "traffic_direction.csv"
 
 data_in, data_out = read_data(path, file_name)
@@ -128,5 +128,5 @@ plt.grid(alpha=0.3)
 plt.title("每小时流量峰值预测（预测步长：一天）")
 plt.xlabel("时间（hour）")
 plt.ylabel("流量峰值（Gbps）")
-plt.savefig("/Users/yuao/PycharmProjects/traffic_prediction/figures/pre_port_max_step_1.png", dpi=600, bbox_inches='tight')
+plt.savefig("pre_port_max_step_1.png", dpi=600, bbox_inches='tight')
 plt.show()
