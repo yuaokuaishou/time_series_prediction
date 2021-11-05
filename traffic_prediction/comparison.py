@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
-path = "/Users/yuao/Downloads/"
+path = ""
 
 data_real = pd.read_csv(path + "traffic_direction.csv")
 data_real = data_real.loc[data_real["direction"] == "in"]
@@ -27,5 +27,5 @@ plt.legend()
 plt.title("每小时流量峰值预测（预测步长：一个月）")
 plt.xlabel("时间（hour）")
 plt.ylabel("流量峰值（Gbps）")
-plt.savefig("/Users/yuao/PycharmProjects/traffic_prediction/figures/compare.png", dpi=600, bbox_inches='tight')
+plt.savefig("compare.png", dpi=600, bbox_inches='tight')
 plt.show()
